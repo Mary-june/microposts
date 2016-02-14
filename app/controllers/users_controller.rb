@@ -31,6 +31,7 @@ before_action :correct_user, only:[:edit, :update]
       redirect_to @user
     else
       render 'edit'
+      
     end
   end
   
