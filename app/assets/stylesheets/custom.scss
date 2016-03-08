@@ -189,6 +189,12 @@ aside {
 
 .users.follow {
   padding: 0;
+  list-style-type:none;
+  overflow: auto;
+  margin-top: 10px;
+  .gravatar {
+    margin: 1px 1px;
+  }
 }
 
 /* microposts */
@@ -222,6 +228,7 @@ aside {
     margin-right: 10px;
     margin-top: 5px;
   }
+  
 }
 
 aside {
@@ -238,7 +245,4 @@ span.picture {
   }
 }
 
-/*画像を横ならびにする*/
-.box {
-	display: inline-block;
-}
+

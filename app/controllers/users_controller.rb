@@ -38,7 +38,7 @@ before_action :correct_user, only:[:edit, :update]
   end
   
   def following
-    @title = "Following"
+    @title = "Followings"
     @user  = User.find(params[:id])
     @users = @user.following_users(page: params[:page])
     render 'show_follow'
