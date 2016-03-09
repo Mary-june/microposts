@@ -9,6 +9,12 @@ Rails.application.routes.draw do
   get 'users/show'
   get 'users/edit'
   
+  resources :users do
+    member do
+      get 'following','followers'
+    end
+  end
+  
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   resources :microposts
